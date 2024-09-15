@@ -15,3 +15,14 @@ function fadeIn() {
       }
     }, 50); // Change the interval (50ms) to speed up/slow down the fade
   }
+
+// Smooth navigation transition
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
