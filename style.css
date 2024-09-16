@@ -20,14 +20,14 @@ header {
     text-transform: uppercase;
     font-family: "Fustat", sans-serif;
 }
-.skills-container {
+.header-skills-container {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
     align-items: center;
 }
-.skills-container > div {
+.header-skills-container > div {
     width: 300px;
     font-family: "Fustat", sans-serif;
     color: white;
@@ -81,7 +81,43 @@ header {
     text-align: left;
     padding-top: 100px;
 }
+.skills-container {
+    background-color: #dbe2ea;
+}
+.skills-header {
+    text-align: center;
+    color: #53749e;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    padding-top: 80px;
+}
+.skills-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 80px;
+}
+.skills-boxes > div {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    padding: 30px;
+    margin: 20px 40px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 3px #888888;
+}
+.skills-text {
+    color: #272727;
+    font-weight: bold;
+    font-size: 17px;
+}
 @media only screen and (max-width: 920px) {
+    .header-nav-container {
+        padding-bottom: 100px;
+    }
     .about {
         gap: 50px;
     }
@@ -103,8 +139,5 @@ header {
     }
     .header-nav-container {
         padding: 50px 0 50px 0;
-    }
-    .about-text {
-        padding-left: 50px;
     }
 }
