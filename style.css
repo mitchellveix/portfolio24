@@ -81,6 +81,21 @@ header {
     text-align: left;
     padding-top: 100px;
 }
+@media only screen and (max-width: 920px) {
+    .about {
+        gap: 50px;
+    }
+    .about > div {
+        width: 300px;
+    }
+    .about-img {
+        width: 100%;
+        height: auto;
+    }
+    .about-text {
+        padding-top: 0px;
+    }
+}
 @media only screen and (max-width: 580px) {
     .name {
         font-size: 30px;
@@ -88,5 +103,8 @@ header {
     }
     .header-nav-container {
         padding: 50px 0 50px 0;
+    }
+    .about-text {
+        padding-left: 50px;
     }
 }
