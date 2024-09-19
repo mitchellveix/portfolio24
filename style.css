@@ -98,13 +98,14 @@ header {
     justify-content: center;
     align-content: center;
     padding-bottom: 80px;
+    margin:0 10%;
 }
 .skills-boxes > div {
     width: 150px;
     height: 150px;
     background-color: white;
     padding: 30px;
-    margin: 20px 40px;
+    margin: 10px 10px;
     align-items: center;
     text-align: center;
     box-shadow: 1px 1px 3px #888888;
@@ -112,6 +113,74 @@ header {
 .skills-text {
     color: #272727;
     font-weight: bold;
+    font-size: 17px;
+}
+.projects-header {
+    text-align: center;
+    color: #53749e;
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.projects-container {
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.projects-img {
+    width: 414px;
+    align-items: center;
+    text-align: center;
+}
+.projects-text {
+    padding-left: 60px;
+    width: 350px;
+    justify-content: left;
+}
+.projects-title {
+    color: #272727;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    border-bottom: 4px solid #53749e;
+    padding-bottom: 15px;
+}
+.projects-body {
+    padding-top: 15px;
+}
+.projects-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+}
+.projects-row > div {
+
+}
+.projects-skill {
+    color: #272727;
+    font-size: 20px;
+    text-align: left;
+}
+.button-open {
+    background-color: #50653a;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+.button-code {
+    border: 3px solid #50653a;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #50653a;
     font-size: 17px;
 }
 footer {
@@ -164,6 +233,19 @@ footer {
     .about-text {
         padding-top: 0px;
     }
+    .skills-boxes {
+        margin:0 5%;
+    }
+}
+@media only screen and (max-width: 830px) {
+    .projects-text {
+        padding-top: 30px;
+        width: 300px;
+        margin-right: 70px;
+    }
+    .skills-boxes {
+        margin:0;
+    }
 }
 @media only screen and (max-width: 580px) {
     .name {
@@ -173,4 +255,14 @@ footer {
     .header-nav-container {
         padding: 50px 0 50px 0;
     }
+    .projects-img {
+        width: 320px;
+    }
+    .projects-text {
+        width: 320px;
+        margin-right: 40px;
+    }
+}
+@media only screen and (max-width: 400px) {
+
 }
